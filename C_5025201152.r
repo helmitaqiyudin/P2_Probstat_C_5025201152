@@ -19,7 +19,7 @@ t.test(sebelum, sesudah, alternative = "two.sided", var.equal = TRUE, mu = 0)
 library(BSDA)
 #a setuju
 #b
-tsum.test(mean.x = 23500, sd(3900), n.x = 100)
+tsum.test(mean.x = 23500, s.x = 3900, n.x = 100, mu = 20000, alternative = "greater")
 #c 9.437e-15 < 0.05
 # H0 dapat ditolak
 
@@ -28,8 +28,7 @@ tsum.test(mean.x = 23500, sd(3900), n.x = 100)
 # H0 : tidak ada perbedaan rata-rata pemegang saham dari bandung dengan pemegang saham dari bali
 # H1 : ada perbedaan rata-rata pemegang saham dari bandung dengan pemegang saham dari bali 
 #b
-tsum.test(mean.x = 3.64, sd(1.67), n.x = 19, mean.y = 2.79, sd(1.32), n.y = 27, alternative = "greater", var.equal = TRUE)
-#c
+tsum.test(mean.x = 3.64, s.x = 1.67, n.x = 19, mean.y = 2.79, s.y = 1.32, n.y = 27, alternative = "two.sided", var.equal = TRUE)#c
 #d
 #e
 #pernyataan H0 dapat ditolak
